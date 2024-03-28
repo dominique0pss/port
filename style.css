@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(porti.png);
+    background-size: cover;
+    animation: v 8s;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 6px;
+    font-family: sans-serif;
+    margin-top: 15%;
+    color:#29ABE2;
+    position: absolute;
+    margin-left: 17em;
+    text-transform: uppercase;
+}
+
+h1::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #29ABE2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .5s;
+}
+
+h1:hover::after{
+    width: 100%;
+}
+
+h1:hover{
+    animation: cores 3s linear infinite;
+}
+
+
+/* menu */
+
+
+
+  
+  menu{
+    display: flex;
+    /* flex-direction: column; */
+    height: 100vh;
+    width: 6em;
+    overflow: hidden;
+    transition: .4s;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0);
+    
+  }
+
+  menu:hover{
+    width: 20em;
+    background-color: rgba(255, 255, 255, 0.651);
+    color: rgb(10, 46, 248);
+  }
+
+ menu a .fa-house{
+    height:40px;
+    display: flex;
+    margin-top: 80px;
+    margin: 150px 20px ;
+ }
+
+ .fa-house{
+    font-size: 2em;
+    
+ }
+
+ .fa-user{
+  font-size: 2em;
+  margin-top: 100%;
+  color: rgb(10, 46, 248);
+  margin-left: 35px;
+ }
+
+ .fa-phone{
+    font-size: 2em;
+    
+    
+ }
+
+.principal{
+    margin-top: 20%;
+   padding-left: 50px;
+}
+
+.principal1{
+    padding-right: 20px;
+}
+
+.principal2{
+    padding-left: 10px;
+}
+
+
+
+.card1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img0{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img1{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img2{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+menu h3{
+    margin-left: 50px;
+}
+    
+h3{
+    font-size: 25px;
+    font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.img0 h3{
+    display: flex;
+    margin-left: 10px;
+}
+
+.td{
+    display: flex;
+}
+
+.ios{
+    color: #c920f3;
+}
+
+.card2{
+    display: flex;
+    margin-left: 50em;
+    margin-top: 25em;
+    
+}
+
+.cardin{
+    display: flex;
+    margin-left: 60em;
+    height: 90px;
+    width: 350px;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 25em;
+}
+
+.cardanm{
+    transition: 2s;
+}
+
+label h2{
+    text-align: center;
+    margin: 5px 0 ;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Rubik Scribble", system-ui;
+  font-weight: 900;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  
+  
+}
+
+.frases{
+    margin: 0 auto;
+    display: none;
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+    position: relative;
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    
+}
+
+.frases::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #0202022f;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 1s;
+    margin: -5px;
+}
+
+.span1{
+    color: rgb(10, 46, 248);
+}
+
+.frases:hover::after{
+    width: 100%;
+    
+}
+
+.input:checked + .cardanm .frases{
+display: block;
+}
+
+.input:checked + .cardanm h2::after{
+    content: "↑";
+}
+
+.input:checked + .cardanm h2{
+    animation: cores 3s linear infinite;
+    
+    
+   
+}
+
+.input:checked + .cardanm p{
+    color:#000000;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    
+}
+
+.input:checked + .cardanm{
+    background: rgba(0, 0, 0, 0);
+}
+
+input{
+    display: none;
+}
+
+.cardanm h2::after{
+    content: "↓";
+    margin-left: 20px;
+    font-size: 2em;
+    height: 20px;
+    color:#29ABE2;
+    font-family: "Rubik Scribble", system-ui;
+  font-weight: 900;
+  font-style: normal;
+    
+}
+
+
+.td .eu{
+    height: 300px;
+    margin-left: 60em;
+    margin-top: 4em;
+    border-radius: 5%;
+    position: absolute;
+    animation: ds 5s linear infinite alternate;
+
+}
+
+@keyframes ds {
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-3%);
+    }
+    100%{
+        transform: translateY(3%);
+    }
+}
+
+@keyframes cores {
+    from{
+        filter: hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.tt{
+    height: 50px;
+    animation: fgt 4s linear forwards;
+    animation-direction: calc(0,.93,.97,.3);
+    
+}
+
+/* .lgs:hover{
+    animation: cores 3s linear infinite;
+} */
+
+.lgs{
+    background-color: #29aae200;
+    color: #29ABE2;
+    border-radius: 2px;
+    font-size: 3em;
+    margin-left: 43%;
+    margin-top: 19%;
+    animation: v 5s;
+    position: absolute;
+    
+}
+
+@keyframes v {
+    0%{
+        transform: translate(0%);
+        opacity: 0;
+
+    }
+    100%{
+        transform: translate(0%);
+        opacity: 1;
+    }
+}
